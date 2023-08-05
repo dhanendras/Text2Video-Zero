@@ -1,7 +1,7 @@
 import torch
 from model import Model
 
-model = Model(device = "cpu", dtype = torch.float16)
+model = Model(device = "cpu", dtype = torch.float32)
 prompt = "A horse galloping on a street"
 params = {"t0": 44, "t1": 47 , "motion_field_strength_x" : 12, "motion_field_strength_y" : 12, "video_length": 8}
 
